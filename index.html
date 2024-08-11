@@ -3,11 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <title>Etch a Sketch</title>
-    <link rel="stylesheet" href="./main.css" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overflow: hidden;
+        background-color: rgb(200, 83, 83);
+      }
+
+      main {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .buttons {
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+      }
+
+      .buttons button {
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      .size {
+        text-align: center;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 30px;
+      }
+    </style>
   </head>
   <body>
     <main>
-      <input class="input" type="range" min="6" max="80" />
+      <div class="buttons">
+        <button class="black">Black</button>
+        <button class="random">Random colors</button>
+        <button class="clear">Clear</button>
+      </div>
+      <div>
+        <input class="input" type="range" min="6" max="80" step="2" />
+        <p class="size"></p>
+      </div>
       <div class="grid-container"></div>
     </main>
 

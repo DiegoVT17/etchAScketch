@@ -1,15 +1,1 @@
-* {
-  box-sizing: border-box;
-}
 
-.grid-container {
-  border: 1px solid black;
-}
-
-.row {
-  display: flex;
-}
-
-.square {
-  border: 1px solid black;
-}
